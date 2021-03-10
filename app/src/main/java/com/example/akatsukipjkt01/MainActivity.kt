@@ -6,9 +6,11 @@ import androidx.databinding.DataBindingUtil
 import com.example.akatsukipjkt01.databinding.ActivityMainBinding
 
 lateinit private var binding:ActivityMainBinding
+data class User(val firstName:String,val lastName:String)
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= DataBindingUtil.setContentView(this,R.layout.activity_main)
+        binding.name=User("Raghav","Kashyap")
     }
 }
