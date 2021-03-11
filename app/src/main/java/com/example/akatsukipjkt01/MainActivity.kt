@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             binding.editName.text=binding.editName.editableText
             Log.e(binding.editName.editableText.toString(),"MainActivity")
             binding.text=User(binding.editName.text.toString())
+
         }
     }
 }
